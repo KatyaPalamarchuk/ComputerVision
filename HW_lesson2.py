@@ -16,11 +16,12 @@ edges_email = cv2.Canny(gray_email, 100, 100)
 
 
 
-cv2.imshow("Photo", mat=image)
-cv2.imshow("Gray Photo", mat=gray_image)
-cv2.imshow("Edges Photo", mat=edges_image)
+cv2.imshow("Photo", image)
+cv2.imshow("Gray Photo", gray_image)
+cv2.imshow("Edges Photo", edges_image)
 cv2.imshow("Email" ,image_email)
 cv2.imshow("Gray Email" ,gray_email)
 cv2.imshow("Edges Email", edges_email)
 cv2.waitKey(0)
+
 cv2.destroyAllWindows()
