@@ -1,8 +1,8 @@
 import cv2
-net = cv2.dnn.readNetFromCaffe('data/MOBILENET/mobilenet_deploy.prototxt', 'data/MOBILENET/mobilenet.caffemodel')
+net = cv2.dnn.readNetFromCaffe('data/MobileNet/mobilenet_v2_deploy.prototxt', 'data/MobileNet/mobilenet_v2.caffemodel')
 classes = []
 
-with open('data/MOBILENET/synset.txt', 'r', encoding='utf-8') as f:
+with open('data/MobileNet/synset.txt', 'r', encoding='utf-8') as f:
     for line in f:
         line = line.strip()
         if not line:
